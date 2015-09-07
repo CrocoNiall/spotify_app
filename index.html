@@ -5,9 +5,22 @@
   <title>Spotify.me</title>
 </head>
 <body>
+<h1>Spotify.me</h1>
+<form>
+  <input id="search-term" name='search-term' type="text" placeholder='Search Term'>
+  <select id="search-action">
+      <option value="album">Album</option>
+      <option value="artist">Artist</option>
+      <option value="track">Track</option>
+  </select>
+<button id='search'>Search</button>
+</form>
 
+<div id='result'>
+
+</div>
   
 </body>
-  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
-  <script src='js/main.js'></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
+  <script src='./js/main.js'></script>
 </html>
