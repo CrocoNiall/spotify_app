@@ -13,13 +13,15 @@ $(document).ready(function() {
 
     console.log('line 12')
     $.get('https://api.spotify.com/v1/search?q=' + searchTerm + '&type=' + searchAction, function(response){
-      console.log(response);
-      var response = response;
 
-      $.each(response.albums.items, function(index, obj) {
+      results.empty();
+      
+      var response = response;
+      var type = searchAction + 's'
+      $.each(response[type].items, function(index, obj) {
   //use obj.id and obj.name here, for example:
       console.log(obj.name);
-      var newElement = ('<h3>' + obj.name + '</h3>');
+      var newElement = ('<div class="element">' + obj.name + '</div>');
       results.append(newElement);
       });
 
