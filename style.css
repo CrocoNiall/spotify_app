@@ -8,29 +8,36 @@ html{
   margin: 0 auto;
 
 }
+
+#logo {
+  width: 300px;
+}
 h1 {
   vertical-align: bottom
 }
 
 body {
-  background: black;
+  font-family: 'Slabo 13px', serif;
   margin: 0;
 }
 
 header{
-  background: green;
+  text-align: center;
   width: 100%;
   margin: 0;
   padding: 20px;
 }
-
+#result{
+  display: block;
+  width: 350px;
+  margin: 0 auto;
+}
 .element{
-  text-align: center;
   background: white;
   margin-top: 3px;
   padding:2px;
   height: 15px;
   border: solid white 2px;
   border-radius: 5px;
-  width: 300px;
+
 }

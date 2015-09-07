@@ -21,7 +21,7 @@ $(document).ready(function() {
       $.each(response[type].items, function(index, obj) {
   //use obj.id and obj.name here, for example:
       console.log(obj.name);
-      var newElement = ('<div class="element">' + obj.name + '</div>');
+      var newElement = ('<div class="element"><li>' + obj.name + '</li></div>');
       results.append(newElement);
       });
 
