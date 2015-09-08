@@ -41,6 +41,6 @@ header{
 
 }
 .img-element {
-  height: 50px;
-  max-width: 50px;
+  max-width: 300px;
+  display: block;
 }

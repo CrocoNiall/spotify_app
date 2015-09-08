@@ -27,8 +27,12 @@ $(document).ready(function() {
       results.append(newElement);
       results.append(imgElement);
       } else if (searchAction === 'track'){
-        var newElement = ('<audio controls="controls"> Your browser does not support the <code>audio</code> element. <source src="' + obj.preview_url +'" type="audio/wav"> </audio>');
+        var newElement = ('<div class="element"><li>' + obj.name + '</li></div>');
+        var imgElement = ('<img class="img-element" src="' + obj.album.images[0].url + '">');
+        var audioElement = ('<audio controls="controls"> Your browser does not support the <code>audio</code> element. <source src="' + obj.preview_url +'" type="audio/wav"> </audio>');
         results.append(newElement);
+        results.append(imgElement);
+        results.append(audioElement);
       }
 
       });
